@@ -1,39 +1,174 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Biker Zome Tailwind And DaisyUI</title>
-    <!-- Font: Google font CDN -->  
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-     <!-- Tailwind and daisyUI CDN -->
-     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
-     <script src="https://cdn.tailwindcss.com"></script>
-     <!-- Font awesome CDN -->
-     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
-     <script>
-        tailwind.config = {
-          theme: {
-            extend: {
-              colors: {
-                clifford: '#da373d',
-              },
-              fontFamily:{
-                'poppins': ['Poppins','sans-serif'],
-              }
-            }
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Biker Zome Tailwind And DaisyUI</title>
+  <!-- Font: Google font CDN -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet">
+  <!-- Tailwind and daisyUI CDN -->
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- Font awesome CDN -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            clifford: '#da373d',
+            bg_orange: '#E76F51',
+            hero_color: 'rgba(231,111,81,0.10)',
+          },
+          fontFamily: {
+            'poppins': ['Poppins', 'sans-serif'],
           }
         }
-      </script>
-      
+      }
+    }
+  </script>
+
 
 </head>
+
 <body class="font-poppins">
-    
-  
-  
+  <header class="md:w-11/12 mx-auto py-15">
+    <!-- navbar section starts here -->
+    <nav>
+      <div class="navbar">
+        <div class="navbar-start">
+          <div class="dropdown">
+            <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" />
+              </svg>
+            </div>
+            <ul tabindex="0" class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
+              <li class=""><a href="">Shop</a></li>
+              <li class=""><a href="">News</a></li>
+              <li class=""><a href="">Contact</a></li>
+              <li class=""><a href="">Home</a></li>
+            </ul>
+          </div>
+          <a class="text-2xl md:text-4xl font-bold p-0">Bike Dekho</a>
+        </div>
+        <div class="navbar-end">
+          <div class="navbar-center hidden lg:flex">
+            <ul class="menu menu-horizontal px-1 font-medium text-base">
+              <li><a href="">Home</a></li>
+              <li><a href="">Shop</a></li>
+              <li><a href="">News</a></li>
+              <li><a href="">Contact</a></li>
+            </ul>
+          </div>
+          <a class="btn bg-bg_orange text-white text-xl font-bold">Login</a>
+        </div>
+      </div>
+    </nav>
+    <!-- navbar ends here -->
+
+    <!-- Hero section starts here -->
+    <div class="hero-section bg-hero_color mt-5 rounded-lg">
+      <div class="carousel w-full">
+        <!-- slide 1 -->
+        <div id="slide1" class="carousel-item relative w-full">
+          <div class="flex flex-col gap-5 p-10 lg:flex-row justify-center items-center lg:px-24 lg:py-0">
+            <!-- text content -->
+            <div class="space-y-6 flex-1">
+              <h2 class="font-bold text-4xl">Ride-on R15 V4 <br> with Smile</h2>
+              <p class="font-light text-base">Amet minim mollit non deserunt ullamco
+                est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit.</p>
+              <button class="btn bg-bg_orange text-white font-semibold text-xl rounded-md">Purchase</button>
+            </div>
+            <!-- image content -->
+            <div class="flex-1">
+              <img src="./images/slider/bike1.png" class="w-full h-full" />
+            </div>
+          </div>
+          <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
+            <a href="#slide4" class="btn btn-circle bg-hero_color">❮</a>
+            <a href="#slide2" class="btn btn-circle bg-hero_color">❯</a>
+          </div>
+        </div>
+        <!-- slide 2 -->
+        <div id="slide2" class="carousel-item relative w-full">
+          <div class="flex flex-col gap-5 p-10 lg:flex-row justify-center items-center lg:p-24">
+            <!-- text content -->
+            <div class="space-y-6 flex-1">
+              <h2 class="font-bold text-4xl">Ride-on R15 V4 <br> with Smile</h2>
+              <p class="font-light text-base">Amet minim mollit non deserunt ullamco
+                est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit.</p>
+              <button class="btn bg-bg_orange text-white font-semibold text-xl rounded-md">Purchase</button>
+            </div>
+            <!-- image content -->
+            <div class="flex-1">
+              <img src="./images/slider/bike2.png" class="w-full h-full" />
+            </div>
+          </div>
+          <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
+            <a href="#slide1" class="btn btn-circle">❮</a>
+            <a href="#slide3" class="btn btn-circle">❯</a>
+          </div>
+        </div>
+
+        <!-- slide 3 -->
+        <div id="slide3" class="carousel-item relative w-full">
+          <div class="flex flex-col gap-5 p-10 lg:flex-row justify-center items-center lg:p-24">
+            <!-- text content -->
+            <div class="space-y-6 flex-1">
+              <h2 class="font-bold text-4xl">Ride-on R15 V4 <br> with Smile</h2>
+              <p class="font-light text-base">Amet minim mollit non deserunt ullamco
+                est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit.</p>
+              <button class="btn bg-bg_orange text-white font-semibold text-xl rounded-md">Purchase</button>
+            </div>
+            <!-- image content -->
+            <div class="flex-1">
+              <img src="./images/slider/bike3.png" class="w-full h-full" />
+            </div>
+          </div>
+          <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
+            <a href="#slide2" class="btn btn-circle">❮</a>
+            <a href="#slide4" class="btn btn-circle">❯</a>
+          </div>
+        </div>
+
+        <!-- slide 4 -->
+        <div id="slide4" class="carousel-item relative w-full">
+          <div class="flex flex-col gap-5 p-10 lg:flex-row justify-center items-center lg:p-24">
+            <!-- text content -->
+            <div class="space-y-6 flex-1">
+              <h2 class="font-bold text-4xl">Ride-on R15 V4 <br> with Smile</h2>
+              <p class="font-light text-base">Amet minim mollit non deserunt ullamco
+                est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit.</p>
+              <button class="btn bg-bg_orange text-white font-semibold text-xl rounded-md">Purchase</button>
+            </div>
+            <!-- image content -->
+            <div class="flex-1">
+              <img src="./images/slider/bike4.png" class="w-full h-full" />
+            </div>
+          </div>
+          <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
+            <a href="#slide3" class="btn btn-circle">❮</a>
+            <a href="#slide1" class="btn btn-circle">❯</a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+    <!-- Hero section ends here -->
+
+  </header>
+
+
 </body>
+
 </html>
