@@ -27,6 +27,7 @@
             clifford: '#da373d',
             bg_orange: '#E76F51',
             hero_color: 'rgba(231,111,81,0.10)',
+            footer_color: '#0B0D17',
           },
           fontFamily: {
             'poppins': ['Poppins', 'sans-serif'],
@@ -333,8 +334,11 @@
       <!-- what asked section starts here -->
       <div class="flex justify-between items-center flex-col lg:flex-row gap-14">
         <!-- What asked  image content -->
-        <div class="flex-1">
+        <div class="flex-1 hidden lg:block">
           <img src="images/others/faq.png" alt="" class="w-full h-full">
+        </div>
+        <div class="flex-1 lg:hidden">
+          <img src="images/others/Frame.png" alt="" class="w-full h-full">
         </div>
         <!-- what asked text content -->
         <div class="space-y-5 flex-1">
@@ -379,14 +383,47 @@
       </div>
 
     </section>
-
-
-
-
-
   </main>
+<!-- footer section -->
+      <footer class="bg-footer_color text-white mt-10">
+       <div class="flex flex-col justify-between gap-4 md:flex-row w-10/12 mx-auto py-12">
 
+        <aside class="space-y-5">
+          <div class="flex gap-4">
+            <p class="text-base font-normal">Download Now</p>
+            <p class="text-base font-normal">License</p>
+          </div>
+          <div>
+            <ul class="grid grid-cols-3 lg:grid-cols-6 gap-0">
+              <li><a href="">About</a></li>
+              <li><a href="">Features</a></li>
+              <li><a href="">Pricing</a></li>
+              <li><a href="">Careers</a></li>
+              <li><a href="">Help</a></li>
+              <li><a href="">Privacy Policy</a></li>
+            </ul>
+          </div>
+          <div class="hidden md:block">
+            <p class="font-normal text-sm text-[#D9DBE1]"> &copy; 2020 bike. All rights reserved</p>
+          </div>
+        </aside>
 
+        <nav>
+          <h6 class="text-[#D9DBE1] font-medium text-xl mb-3">Get the App</h6>
+          <div class="grid grid-cols-1 gap-4 space-y-3">
+            <a>
+              <img src="images/others/ios.png" alt="" class="w-[130px] h-[40px]">
+            </a>
+            <a>
+              <img src="images/others/android.png" alt="" class="w-[130px] h-[40px]">
+            </a>
+          </div>
+          <div class="mt-7 md:hidden">
+            <p class="font-normal text-sm text-[#D9DBE1]"> &copy; 2020 bike. All rights reserved</p>
+          </div>
+        </nav>
+       </div>
+      </footer>
 </body>
 
 </html>
